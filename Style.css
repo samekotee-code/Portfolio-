@@ -1,0 +1,280 @@
+* html {
+    scroll-behavior: smooth;
+}
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f7fa;
+    color: #222;
+}
+
+header {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 21px;
+    color: #d1d5db;
+}
+
+nav {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #111827;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#home {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#home h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+#home h3 {
+    color: #2563eb;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+#home p {
+    max-width: 600px;
+    margin: auto;
+    color: #555;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+#projects {
+    background: white;
+}
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+.about-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    margin-bottom: 12px;
+}
+.skills-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    flex: 1;
+    min-width: 200px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.skill-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #555;
+}
+.projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.project-card span {
+    font-weight: bold;
+    font-size: 14px;
+}
+.contact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-btn {
+    display: inline-block;
+    margin: 20px 8px 0;
+    padding: 12px 22px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.whatsapp-btn {
+    background: #16a34a;
+}
+@media (max-width: 600px) {
+
+    header {
+        padding: 35px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        padding: 12px 5px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 6px;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 45px 15px;
+    }
+
+    #home h2 {
+        font-size: 28px;
+    }
+
+    .skills-container,
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .skill-card,
+    .project-card {
+        min-width: 100%;
+    }
+
+    .contact-btn {
+        display: block;
+        margin: 15px 0;
+    }
+}
+.dark-mode {
+    background: #111827;
+    color: #f9fafb;
+}
+
+.dark-mode section,
+.dark-mode .about-card,
+.dark-mode .skill-card,
+.dark-mode .project-card,
+.dark-mode .contact-card {
+    background: #1f2937;
+    color: #f9fafb;
+}
+
+.dark-mode nav {
+    background: #1f2937;
+}
+
+.dark-mode nav a {
+    color: white;
+}
+
+.dark-mode .about-card p,
+.dark-mode .skill-card p,
+.dark-mode .project-card p,
+.dark-mode #home p {
+    color: #d1d5db;
+}
+
+#darkModeBtn {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
